@@ -83,11 +83,9 @@ exports.login = async (req, res) => {
     return res.status(404).json({ message: 'Invalid Credentails' });
   } catch (error) {
     console.log(error);
-    res
-      .status(500)
-      .json({
-        message: 'Some error occured while logging in, please try again later',
-      });
+    res.status(500).json({
+      message: 'Some error occured while logging in, please try again later',
+    });
   }
 };
 
@@ -98,11 +96,9 @@ exports.verifyOtp = async (req, res) => {
 
     // if user id does not exists then returns a 404 response
     if (!isValidUserId) {
-      return res
-        .status(404)
-        .json({
-          message: 'User not Found, for which the otp has been generated',
-        });
+      return res.status(404).json({
+        message: 'User not Found, for which the otp has been generated',
+      });
     }
 
     // checks if otp exists by that user id
@@ -169,12 +165,9 @@ exports.resendOtp = async (req, res) => {
 
     res.status(201).json({ message: 'OTP sent' });
   } catch (error) {
-    res
-      .status(500)
-      .json({
-        message:
-          'Some error occured while resending otp, please try again later',
-      });
+    res.status(500).json({
+      message: 'Some error occured while resending otp, please try again later',
+    });
     console.log(error);
   }
 };
@@ -283,12 +276,10 @@ exports.resetPassword = async (req, res) => {
     return res.status(404).json({ message: 'Reset Link has been expired' });
   } catch (error) {
     console.log(error);
-    res
-      .status(500)
-      .json({
-        message:
-          'Error occured while resetting the password, please try again later',
-      });
+    res.status(500).json({
+      message:
+        'Error occured while resetting the password, please try again later',
+    });
   }
 };
 

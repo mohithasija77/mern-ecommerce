@@ -175,8 +175,11 @@ Accessing the Application
 Once both servers are running, you can access them at the following URL's:
 
 
-![front](https://github.com/user-attachments/assets/ae8eec8f-1927-4ac0-861c-183ad9f13217)
-![banner3](https://github.com/user-attachments/assets/b8e62e55-d600-486d-b6ef-36d194d5295b)
+<img width="1710" alt="Screenshot 2025-06-13 at 04 17 19" src="https://github.com/user-attachments/assets/560ca13a-caaa-4b39-9e26-fda624e55561" />
+<img width="1710" alt="Screenshot 2025-06-13 at 04 18 22" src="https://github.com/user-attachments/assets/59762c8c-a056-4787-aab2-e795a91e78f2" />
+
+
+
 
 
 ```bash
